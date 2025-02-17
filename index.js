@@ -2,7 +2,7 @@ const http = require('http');
 
 const url = require('url');
 
-const MyApiKey = 'bfaf78d95341d079fb20135e1cc027c0';
+const MyApiKey = process.env.myApiKey;
 
 // Создаю http server
 const server = http.createServer((req, res) => {
